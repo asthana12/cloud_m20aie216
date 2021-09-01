@@ -1,0 +1,3 @@
+INSERT INTO ASSIGNMENT.COURSE_WORK (Assignment_Name, Assignment_Desc, Updated_At, Updated_By) VALUES ('Cloud-1', 'Virtualization & Docker Concepts', SYSDATE,'asthana.1');
+INSERT INTO ASSIGNMENT.COURSE_WORK (Assignment_Name, Assignment_Desc, Updated_At, Updated_By) VALUES ('ADA-1', 'RB-Tree Concepts', SYSDATE,'sumitk');
+INSERT INTO ASSIGNMENT.COURSE_WORK (Assignment_Name, Assignment_Desc, Updated_At, Updated_By) VALUES ('ML-1', 'Basics of KNN,Random', SYSDATE,'JayantV');
