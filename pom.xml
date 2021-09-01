@@ -10,12 +10,13 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.cse</groupId>
-	<artifactId>IITJCloudAssignment</artifactId>
+	<artifactId>iitjm20aie216</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>IITJCloudAssignment</name>
 	<description>This Project is for completing Assingment of VCC</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<docker.name>iitjm20aie216</docker.name>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -73,9 +74,15 @@
 				</configuration>
 			</plugin>
 			<plugin>
-			<groupId> com.spotify </groupId>
-			<artifactId> dockerfile-maven-plugin </artifactId>
-			<version>1.4.12</version>
+				<groupId> com.spotify </groupId>
+				<artifactId> dockerfile-maven-plugin </artifactId>
+				<version>1.4.12</version>
+				<configuration>
+					<repository>${docker.name}/${project.artifactId}</repository>
+					<buildArgs>
+						<RUN_JAR>target/${project.build.finalName}.jar</RUN_JAR>
+					</buildArgs>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

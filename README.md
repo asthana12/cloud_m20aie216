@@ -7,7 +7,7 @@ Technologies Used: Java, Spring Boot, Jetty Server, H2 Database, Docker, Maven (
 
 Commands to be used to run the application :
 1. mvn install dockerfile:build
-2. docker run -p 8080:8081 -t IITJCloudAssignment/IITJCloudAssignment
+2. docker run -p 8088:8080 -t iitjm20aie216/iitjm20aie216
 
 Steps Followed :
 
